@@ -5,7 +5,16 @@ module.exports = {
     "src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Pacifico': ['"Pacifico"', 'cursive'],
+        'Poppins': ['"Poppins"', 'sans-serif']
+      },
+      colors:{
+        'tahiti': '#3ab7bf',
+        'primary' : '#3232a7',
+      }
+    },
   },
   plugins: [],
 }
