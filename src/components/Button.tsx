@@ -4,19 +4,21 @@ import styled from 'styled-components';
 interface IButton {
     content: string,
     className?: string;
+    primaryBtnAction? : ()=>void;
+    secondaryBtnAction? : ()=>void;
 }
 
-export const PrimaryButton = ({ content, className }: IButton) => {
+export const PrimaryButton = ({ content, className, primaryBtnAction  }: IButton) => {
     return (
-        <PrimaryBtn>
+        <PrimaryBtn onClick={primaryBtnAction}>
             {content}
         </PrimaryBtn>
     )
 }
 
-export const TransparentButton = ({ content, className }: IButton) => {
+export const TransparentButton = ({ content, className, secondaryBtnAction }: IButton) => {
     return (
-        <TranparentBtn >
+        <TranparentBtn onClick={secondaryBtnAction}>
             {content}
         </TranparentBtn>
     )

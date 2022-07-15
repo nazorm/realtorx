@@ -4,18 +4,16 @@ import Image from 'next/image';
 import favicon from '/public/vercel.svg'
 import { FaBeer } from 'react-icons/fa';
 
-
-const mainHouse = '/assets/main-house.jpg'
 export const Intro = () => {
     return (
         <Wrapper>
             <div className="intro-text">
-                <h1 className="heading">Find the perfect home with Realtorx</h1>
-                <p>We know findind a perfect home can be an hassle, lets take care of this hassle.
+                <h1 className="heading leading-tight" style={{position:'relative'}}>Find the perfect <span className="animated-text text-primary"></span><br/> with Realtorx</h1>
+                <p>We know finding a perfect home can be an hassle, lets take care of this hassle.
                     Browse our array of available spaces </p>
                 <div className="intro-cta">
-                  <PrimaryButton content={'Browse'}/>
-                  <TransparentButton content ={'Learn More'}/>
+                    <PrimaryButton content={'Browse'} />
+                    <TransparentButton content={'Learn More'} />
 
                 </div>
             </div>
@@ -36,14 +34,13 @@ export const Intro = () => {
                             />
                         </li>
                         <li className="small-circle">
-                            {/* <Image src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80" alt="circle-component" className="circle-image" width={80}
+                            <Image src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80" alt="circle-component" className="circle-image" width={80}
                                 height={80}
                                 layout="responsive"
                                 style={{ borderRadius: '50%' }}
 
 
-                            /> */}
-                            <FaBeer size={50}/>
+                            />
                         </li>
                         <li className="small-circle">
                             <Image src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="circle-component" className="circle-image" width={80}
@@ -55,7 +52,25 @@ export const Intro = () => {
                             />
                         </li>
                         <li className="small-circle">
-                            <Image src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80" alt="circle-component" className="circle-image" width={80}
+                            <Image src="https://images.unsplash.com/photo-1595231583135-e4bf563b4806?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1372&q=80" alt="circle-component" className="circle-image" width={80}
+                                height={80}
+                                layout="responsive"
+                                style={{ borderRadius: '50%' }}
+
+
+                            />
+                        </li>
+                        <li className="small-circle">
+                            <Image src="https://images.unsplash.com/photo-1596997000103-e597b3ca50df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="circle-component" className="circle-image" width={80}
+                                height={80}
+                                layout="responsive"
+                                style={{ borderRadius: '50%' }}
+
+
+                            />
+                        </li>
+                        <li className="small-circle">
+                            <Image src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="circle-component" className="circle-image" width={80}
                                 height={80}
                                 layout="responsive"
                                 style={{ borderRadius: '50%' }}
@@ -73,25 +88,7 @@ export const Intro = () => {
                             />
                         </li>
                         <li className="small-circle">
-                            <Image src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80" alt="circle-component" className="circle-image" width={80}
-                                height={80}
-                                layout="responsive"
-                                style={{ borderRadius: '50%' }}
-
-
-                            />
-                        </li>
-                        <li className="small-circle">
-                            <Image src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80" alt="circle-component" className="circle-image" width={80}
-                                height={80}
-                                layout="responsive"
-                                style={{ borderRadius: '50%' }}
-
-
-                            />
-                        </li>
-                        <li className="small-circle">
-                            <Image src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2250&q=80" alt="circle-component" className="circle-image" width={80}
+                            <Image src="https://images.unsplash.com/photo-1595231583135-e4bf563b4806?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1372&q=80" alt="circle-component" className="circle-image" width={80}
                                 height={80}
                                 layout="responsive"
                                 style={{ borderRadius: '50%' }}
@@ -119,11 +116,14 @@ justify-content: space-between;
     flex-direction: column;
   }
   .intro-text{
-    width: 600px;
+    width: 700px;
     .heading{
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bold;
         margin-bottom: 10px;
+    }
+    p{
+        width: 500px;
     }
 .intro-cta{
     margin-top: 20px;
@@ -138,17 +138,38 @@ justify-content: space-between;
     }
 }
   }
+
+  .animated-text {
+  text-indent: 8px;
+}
+
+.animated-text:before {
+  content: "Home";
+  animation: changeText 5s infinite 0s;
+}
+
+@keyframes changeText {
+  0% {
+    content: "Home";
+  }
+  25% {
+    content: "Apartment";
+  }
+  50% {
+    content: "Roommate";
+  }
+  75% {
+    content: "Office Space";
+  }
+  100% {
+    content: "Home";
+  }
+}
 `;
 const Circle = styled.div`
 position:relative;
 margin-top: 10%;
 .big-circle {
-    /* position:relative;
-    border: 2px solid #d87272;
-    border-radius: 50%;
-    width: 400px;
-    height: 400px; */
-    
 }
 .circle-main-image{
  position: absolute;
@@ -158,11 +179,6 @@ margin-top: 10%;
     /* flex-direction: column; */
   }
 }
-/* .main-house-image{
-    width: 200px
-    position: absolute;
-    top: 30%;
-} */
 .rotating-circle{
     position:relative;
     /* border: 2px solid #d87272; */
