@@ -213,7 +213,10 @@ const FlipCardContainer = styled.div`
   perspective: 1500px;
   border-radius: 8px;
   overflow: hidden;
-
+  @media only screen and (max-width: 1056px){
+    width: 280px;
+    height: 350px;
+        }
 }
 
 .flip-card-inner {
@@ -340,6 +343,10 @@ const Services = styled.section`
    height: 325px;
    overflow: hidden;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   @media only screen and (max-width: 1056px){
+    width: 210px;
+    height: 280px;
+        }
  }
  .service-text{
     padding: 15px;

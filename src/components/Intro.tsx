@@ -8,7 +8,7 @@ export const Intro = () => {
     return (
         <Wrapper>
             <div className="intro-text">
-                <h1 className="heading leading-tight" style={{position:'relative'}}>Find the perfect <span className="animated-text text-primary"></span><br/> with Realtorx</h1>
+                <h1 className="heading leading-tight" style={{ position: 'relative' }}>Find the perfect <span className="animated-text text-primary"></span><br /> with Realtorx</h1>
                 <p>We know finding a perfect home can be an hassle, lets take care of this hassle.
                     Browse our array of available spaces </p>
                 <div className="intro-cta">
@@ -117,13 +117,20 @@ justify-content: space-between;
   }
   .intro-text{
     width: 700px;
+
     .heading{
         font-size: 40px;
         font-weight: bold;
         margin-bottom: 10px;
+        @media only screen and (max-width: 1024px){
+         font-size: 20px;
+        }
     }
     p{
         width: 500px;
+        @media only screen and (max-width: 1024px){
+            width: 400px;
+        }
     }
 .intro-cta{
     margin-top: 20px;
@@ -169,6 +176,7 @@ justify-content: space-between;
 const Circle = styled.div`
 position:relative;
 margin-top: 10%;
+
 .big-circle {
 }
 .circle-main-image{
@@ -188,6 +196,7 @@ margin-top: 10%;
     -webkit-animation: spin 12s infinite linear;
     -moz-animation: spin 12s infinite linear; 
     animation: spin 12s infinite linear;
+
 }
 @-webkit-keyframes spin {
 100%{-webkit-transform: rotate(360deg)}

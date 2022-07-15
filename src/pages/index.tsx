@@ -9,6 +9,7 @@ import { Testimonials } from 'src/components/Testimonials';
 import { Footer } from 'src/components/Footer';
 import styled from 'styled-components';
 const Home: NextPage = () => {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,6 +17,8 @@ const Home: NextPage = () => {
         <meta name="description" content="A description of realtorx" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <MobileContainer><p>View on Desktop</p></MobileContainer>
+
       <Wrapper>
         <Header />
         <Intro />
@@ -23,6 +26,7 @@ const Home: NextPage = () => {
         <Testimonials />
         <Footer />
       </Wrapper>
+
 
       {/* <main className={styles.main}>
  
@@ -48,6 +52,20 @@ export default Home
 
 
 const Wrapper = styled.section`
-width: 85%;
-margin: 10px auto;
+  width: 85%;
+  margin: 10px auto;
+  @media only screen and (max-width: 1000px){
+    width: 90%;
+    display: none;
+  }
 `
+const MobileContainer = styled.div`
+  display: none;
+  @media only screen and (max-width: 1000px){
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+  }
+`;
